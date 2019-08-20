@@ -9,3 +9,4 @@ cn\wasu\login\domain\BusinessModel.class
 cn\wasu\login\domain\Device.class
 cn\wasu\login\domain\UserDevice.class
 cn\wasu\login\utils\Constants.class
+cn\wasu\login\controller\BacUserController.class

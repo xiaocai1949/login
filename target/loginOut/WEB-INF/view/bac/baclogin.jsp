@@ -10,7 +10,7 @@
 <br>
 <br>
 <br>
-<form name="form" action="login" method="post" >
+<form name="form" action="${pageContext.request.contextPath }/bac/login" method="post" >
     <table width="300" border="1" align="center">
         <tr>
             <td colspan="2">登入窗口</td>

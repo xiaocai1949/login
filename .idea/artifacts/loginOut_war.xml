@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="loginOut:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>loginOut</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="loginOut.war">
+      <element id="artifact" artifact-name="loginOut:war exploded" />
+    </root>
+  </artifact>
+</component>

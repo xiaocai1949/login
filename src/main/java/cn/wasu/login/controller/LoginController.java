@@ -31,6 +31,7 @@ public class LoginController {
     public String login_dev(){
         return "/dev/devlogin";
     }
+
     //app开发者登出
     @RequestMapping(value = "/loginOut_dev")
     public String loginOut_dev(HttpSession session){
@@ -43,9 +44,16 @@ public class LoginController {
     public String login_bac(){
         return "/bac/baclogin";
     }
+
     //app后台管理者登出
     @RequestMapping(value = "/loginOut_bac")
     public String loginOut_bac(HttpSession session){
+        session.removeAttribute(Constants.DEV_USER_SESSION);
+        return "/bac/baclogin";
+    }
+    //app后台管理者登出
+    @RequestMapping(value = "/test")
+    public String test(HttpSession session){
         session.removeAttribute(Constants.DEV_USER_SESSION);
         return "/bac/baclogin";
     }
