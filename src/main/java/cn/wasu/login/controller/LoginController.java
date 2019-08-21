@@ -57,4 +57,10 @@ public class LoginController {
         session.removeAttribute(Constants.DEV_USER_SESSION);
         return "/bac/baclogin";
     }
+    //app后台管理者登出task
+    @RequestMapping(value = "/test/task")
+    public String task(HttpSession session){
+        session.removeAttribute(Constants.DEV_USER_SESSION);
+        return "/bac/baclogin";
+    }
 }
